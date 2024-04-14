@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;800&family=Work+Sans&display=swap");
+
+/* Reset default margin, padding, and font */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #34495e; /* Dark blue background */
+  color: #ecf0f1; /* Light gray text */
+  font-family: "Roboto Slab", serif;
+}
+
+/* Invert image colors */
+.image-inverted {
+  filter: invert(100%);
+}
+
+/* Navigation links styles */
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px; /* Combine margin properties */
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: #2980b9; /* Blue background */
+  color: #ecf0f1; /* Light gray text */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}
+
+/* Override outlined input styles */
+.MuiOutlinedInput-input-root.Mui-focused,
+.MuiOutlinedInput-notchedOutline {
+  border-color: #ecf0f1 !important; /* Light gray border */
+}
+
+/* Rotation animation */
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+/* Keyframes for rotation animation */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
